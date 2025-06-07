@@ -1,6 +1,6 @@
 package main
 
-import "github.com/koh/ollama-client/cmd"
+import "github.com/koh-yoshimoto/olc/cmd"
 
 func main() {
 	cmd.Execute()

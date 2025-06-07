@@ -6,7 +6,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/koh/ollama-client/pkg/ollama"
+	"github.com/koh-yoshimoto/olc/pkg/ollama"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
