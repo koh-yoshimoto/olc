@@ -28,7 +28,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.ollama-client.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.olc.yaml)")
 }
 
 func initConfig() {
@@ -40,7 +40,7 @@ func initConfig() {
 
 		viper.AddConfigPath(home)
 		viper.SetConfigType("yaml")
-		viper.SetConfigName(".ollama-client")
+		viper.SetConfigName(".olc")
 	}
 
 	viper.SetDefault("ip", "localhost")

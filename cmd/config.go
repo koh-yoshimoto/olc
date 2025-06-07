@@ -71,7 +71,7 @@ func setConfigValue(key, value string) {
 		return
 	}
 
-	configPath := fmt.Sprintf("%s/.ollama-client.yaml", home)
+	configPath := fmt.Sprintf("%s/.olc.yaml", home)
 	
 	viper.Set(key, value)
 	

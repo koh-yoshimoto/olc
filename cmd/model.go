@@ -150,7 +150,7 @@ func setDefaultModel(modelName string) {
 		return
 	}
 
-	configPath := fmt.Sprintf("%s/.ollama-client.yaml", home)
+	configPath := fmt.Sprintf("%s/.olc.yaml", home)
 	
 	viper.Set("default_model", modelName)
 	
